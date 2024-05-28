@@ -1,0 +1,21 @@
+{
+  "name": "node-rust-wasm-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:transpile": "jco transpile target/wasm32-wasi/debug/node_rust_wasm_lambda.wasm -o target/jco",
+    "build:rust": "cargo component build",
+    "build:dist": "rm -f dist && mkdir dist/ & zip -rq wasm-js-lambda.zip index.mjs package.json node_modules target/jco && mv wasm-js-lambda.zip dist/",
+    "build": "npm run build:rust && npm run build:transpile && npm run build:dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bytecodealliance/jco": "^1.2.4",
+    "@bytecodealliance/preview2-shim": "^0.16.2"
+  }
+}

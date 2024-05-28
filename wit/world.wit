@@ -1,0 +1,5 @@
+package component:node-rust-wasm-lambda;
+
+world example {
+    export shout: func(input: string) -> string;
+}
