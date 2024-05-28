@@ -54,7 +54,7 @@ aqqqlocally.
 in a folder called `dist`.
 3. Create a blank Node.js AWS lambda function.
 4. Upload the zip to the lambda function.
-5. Execute the lambda function with the default test envent, which should produce the following output:
+5. Execute the lambda function with the default test event, which should produce the following output:
 
 ```
 "VALUE1!"
