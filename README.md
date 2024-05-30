@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a sample project for compiling a Rust module to WASM and using JCO to import it in Node.js 
+This is a sample project for compiling a Rust module to WASM and using JCO to import it in a Node.js 
 AWS Lambda function.
 
 ## Prerequisites
