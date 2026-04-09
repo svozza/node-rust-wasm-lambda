@@ -36,7 +36,7 @@ impl Guest for Component {
 }
 ```
 
-The `wit/world.wit` file which uses the [IDL(https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md)] 
+The `wit/world.wit` file which uses the [IDL](https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md) 
 that underpins the WebAssembly component model was also changed:
 
 ```
